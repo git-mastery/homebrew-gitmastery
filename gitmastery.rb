@@ -1,9 +1,9 @@
 class Gitmastery < Formula
   desc "CLI tool for Git-Mastery"
   homepage "https://github.com/git-mastery/cli"
-  url "https://github.com/git-mastery/cli/releases/download/v4.5.0/gitmastery"
-  sha256 "7c7234a541bd0374e6f12faa0441df094adfe1104b4cb1c24b3885c846998839"
-  version "4.5.0"
+  url "https://github.com/git-mastery/cli/releases/download/v4.6.0/gitmastery"
+  sha256 "97f89ea88f76f97af78cbf2a7eabb3c052c71b483ac236e795aa742ff7124445"
+  version "4.6.0"
 
   def install
     chmod 0755, "gitmastery"
