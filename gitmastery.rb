@@ -1,15 +1,15 @@
 class Gitmastery < Formula
   desc "CLI tool for Git-Mastery"
   homepage "https://github.com/git-mastery/cli"
-  version "4.8.3"
+  version "4.8.4"
 
   on_arm do
-    url "https://github.com/git-mastery/cli/releases/download/v4.8.3/gitmastery-arm64"
+    url "https://github.com/git-mastery/cli/releases/download/v4.8.4/gitmastery-arm64"
     sha256 ""
   end
 
   on_intel do
-    url "https://github.com/git-mastery/cli/releases/download/v4.8.3/gitmastery-amd64"
+    url "https://github.com/git-mastery/cli/releases/download/v4.8.4/gitmastery-amd64"
     sha256 ""
   end
 
