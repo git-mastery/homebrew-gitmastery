@@ -1,13 +1,26 @@
 class Gitmastery < Formula
   desc "CLI tool for Git-Mastery"
   homepage "https://github.com/git-mastery/cli"
-  url "https://github.com/git-mastery/cli/releases/download/v4.8.0/gitmastery"
-  sha256 "7d74d459ad47bdc4003556007ddfa51153a3abce582e1538e5ca65aaaaec6faf"
-  version "4.8.0"
+  version "4.8.3"
+
+  on_arm do
+    url "https://github.com/git-mastery/cli/releases/download/v4.8.3/gitmastery-arm64"
+    sha256 ""
+  end
+
+  on_intel do
+    url "https://github.com/git-mastery/cli/releases/download/v4.8.3/gitmastery-amd64"
+    sha256 ""
+  end
 
   def install
-    chmod 0755, "gitmastery"
-    bin.install "gitmastery"
+    if Hardware::CPU.arm?
+      chmod 0755, "gitmastery-arm64"
+      bin.install "gitmastery-arm64" => "gitmastery"
+    else
+      chmod 0755, "gitmastery-amd64"
+      bin.install "gitmastery-amd64" => "gitmastery"
+    end
   end
 
   test do
