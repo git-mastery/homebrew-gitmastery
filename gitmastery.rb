@@ -5,12 +5,12 @@ class Gitmastery < Formula
 
   on_arm do
     url "https://github.com/git-mastery/cli/releases/download/v7.1.8/gitmastery-arm64"
-    sha256 "80e8d83a79256bb14acc48775260caf15cd9e4fc716ecb1ce0baae9614758634"
+    sha256 "211c6c8503e4508b8a5103160dbf7352ea8bf26e9eba894dffa1781117b75731"
   end
 
   on_intel do
     url "https://github.com/git-mastery/cli/releases/download/v7.1.8/gitmastery-amd64"
-    sha256 "661f144abf030bff260be98f932a5603016b29d33382c4445f138e64c2693a58"
+    sha256 "30376aa8edda048b8ad93f32a18e63fb78cf750d1ba5362a149a108fd4b9061c"
   end
 
   def install
