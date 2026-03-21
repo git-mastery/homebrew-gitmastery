@@ -1,16 +1,16 @@
 class Gitmastery < Formula
   desc "CLI tool for Git-Mastery"
   homepage "https://github.com/git-mastery/cli"
-  version "7.8.0"
+  version "7.8.1"
 
   on_arm do
-    url "https://github.com/git-mastery/cli/releases/download/v7.8.0/gitmastery-arm64"
-    sha256 "d08fd52c0ec02025cff619a7dc121d5bb2e01ccd25b56e7ea3a73cc3e25cdb92"
+    url "https://github.com/git-mastery/cli/releases/download/v7.8.1/gitmastery-arm64"
+    sha256 "373f2d3fa0e0dd32140659aeaa79079ec33dae56a29138d8b53de671fe1e476b"
   end
 
   on_intel do
-    url "https://github.com/git-mastery/cli/releases/download/v7.8.0/gitmastery-amd64"
-    sha256 "ac1bd052ca8a6b092ba072e55666fe136e3ffed789b6c7359a915d23634c2d4a"
+    url "https://github.com/git-mastery/cli/releases/download/v7.8.1/gitmastery-amd64"
+    sha256 "f1b77a465890116de657a52e104878a9a5f85ece53216a2955c26a089cedbcb5"
   end
 
   def install
